@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Lightbox | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        .filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #555;
+}
+
+.filter-btn.active {
+    background-color: #0ef;
+    color: #000;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>My Image Gallery</h1>
+        <div class="filter-buttons">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="category1">Category 1</button>
+            <button class="filter-btn" data-filter="category2">Category 2</button>
+            <button class="filter-btn" data-filter="category3">Category 3</button>
+        </div>
+        <div class="gallery">
+            <div class="image" data-category="category1"><span><img src="images/img-1.jpg" alt=""></span></div>
+            <div class="image" data-category="category2"><span><img src="images/img-2.jpg" alt=""></span></div>
+            <div class="image" data-category="category3"><span><img src="images/img-3.jpg" alt=""></span></div>
+            <div class="image" data-category="category1"><span><img src="images/img-4.jpg" alt=""></span></div>
+            <div class="image" data-category="category2"><span><img src="images/img-5.jpg" alt=""></span></div>
+            <div class="image" data-category="category3"><span><img src="images/img-6.jpg" alt=""></span></div>
+        </div>
+    </div>
+    <div class="preview-box">
+        <div class="details">
+            <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+            <span class="icon fas fa-times"></span>
+        </div>
+        <div class="image-box">
+            <div class="slide prev"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="slide next"><i class="fas fa-angle-right"></i></div>
+            <img src="" alt="">
+        </div>
+    </div>
+    <div class="shadow"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
